@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="image">
+            <img src="img/question.svg" alt="">
+        </div>
+        <div class="text">
+            <h3>Quiz App with Fixed Time</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique culpa assumenda maxime accusamus, nisi ipsa pariatur minima nostrum aliquid.</p>
+
+            <h3>Quiz App for Learning</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptatibus.</p>
+        </div>
+        <div class="start-btn">
+            <button >Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="rules-box">
+        <div class="rules-title">Some Rules of This Quiz</div>
+        <div class="rules-list">
+            <ol>
+                <li>You will have only <span style="color: blue;">15 seconds</span> per each question.</li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>You can't select any option when time goes off.</li>
+                <li>You can't exit from the quiz while you're playing.</li>
+                <li>You'll get points on the basis of your correct answers.</li>
+            </ol>
+        </div>
+        <div class="rules-buttons">
+            <button class="exit-button">Exit Quiz</button>
+            <button class="continue-button">Continue</button>
+        </div>
+    </div>
+
+    <div class="questions">
+        <div class="question-header">
+            <div class="title">Start Exam</div>
+            <div class="timer">
+                <div class="left">Time Left</div>
+                <div class="seconds">15</div>
+            </div>
+            <div class="timeline"></div>
+        </div>
+
+        <div class="question-body">
+            <div class="question-body-title">
+                <!-- title will be added by js dinamically -->
+            </div>
+            <div class="answer-list">
+                <!-- list will be added by js dinamically -->
+            </div>
+        </div>
+
+        <div class="footer">
+                <div class="question-count">
+                    <!-- code will be added by js -->
+                </div>
+                <button class="next-question">Next Que</button>
+        </div>
+    </div>
+
+    <div class="result-box">
+        <div class="result-image">
+            <img src="img/winner.svg" alt="">
+        </div>
+        <div class="result-text">You Have Finished this Exam</div>
+        <div class="score">
+            <!-- text will be added by js dinamically -->
+        </div>
+        <div class="result-buttons">
+            <button class="restart-quiz">Replay</button>
+            <button class="quit-quiz">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/questions.js"></script>
+</body>
+</html>
